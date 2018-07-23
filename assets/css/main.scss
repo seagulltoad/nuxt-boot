@@ -1,0 +1,90 @@
+/* variable */
+
+$bg-color: #fff;
+$font-color: #333;
+$link-color: #333;
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+iframe,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+button,
+input,
+textarea,
+th,
+td,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.618;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", sans-serif;
+  color: $font-color;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: $link-color;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+}
+
+
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", sans-serif;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity .5s
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0
+}
